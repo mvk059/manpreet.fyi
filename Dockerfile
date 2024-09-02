@@ -19,7 +19,10 @@ FROM nginx:alpine
 # Copy the generated static files from the Hugo build to nginx's serving directory
 COPY --from=0 /src/public /usr/share/nginx/html
 
-# Expose port 80
+# Copy the custom Nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 3000
 EXPOSE 3000
 
 # Start nginx
