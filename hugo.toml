@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://manpreet.fyi/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Manpreet Kunnath'
 theme = 'nightfall'
 
 #[menu]
