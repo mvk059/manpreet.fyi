@@ -2,3 +2,47 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'nightfall'
+
+#[menu]
+#  [[menu.header]]
+#    name = "blog"
+#    weight = 1
+#    url = "blog"
+#  [[menu.header]]
+#    name = "about"
+#    weight = 0
+#    url = "about"
+
+[params]
+  user = ""
+  hostname = "manpreet.fyi"
+[params.author]
+  name = "Manpreet Kunnath"  # Website and RSS feed author
+  email = "m@manpreet.fyi"  # RSS feed email address
+
+[[params.social]]
+  key = 0
+  name = "github"
+  url = "https://github.com/mvk059"
+  target = "_blank"
+  aria = "GitHub Profile"
+
+[[params.social]]
+	key = 1
+	name = "twitter"
+	url = "https://x.com/manpreetkunnath"
+	target = "_blank"
+	aria = "Twitter Profile"
+
+[[params.social]]
+	key = 2
+	name = "linkedin"
+	url = "https://linkedin.com/in/manpreetkunnath"
+	target = "_blank"
+	aria = "LinkedIn Profile"
+
+[[params.social]]
+	key = 3
+	name = "email"
+	url = "mailto:m@manpreet.fyi"
+	aria = "My e-Mail Address"
