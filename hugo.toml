@@ -3,15 +3,15 @@ languageCode = 'en-us'
 title = 'Manpreet Kunnath'
 theme = 'nightfall'
 
-#[menu]
+[menu]
+  [[menu.header]]
+    name = "portfolio"
+    weight = 1
+    url = "https://portfolio.manpreet.fyi/"
 #  [[menu.header]]
 #    name = "blog"
-#    weight = 1
-#    url = "blog"
-#  [[menu.header]]
-#    name = "about"
 #    weight = 0
-#    url = "about"
+#    url = "blog"
 
 [params]
   user = ""
