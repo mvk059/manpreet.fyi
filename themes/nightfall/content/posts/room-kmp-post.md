@@ -2,8 +2,8 @@
 title: "Setup Room in Kotlin Multiplatform"
 date: 2024-12-23
 draft: false
-description: "Setting up Room in version 2.7.0-alpha12."
-summary: "Setting up Room in version 2.7.0-alpha12."
+description: "Setting up Room in version 2.7.0-alpha12"
+summary: "Setting up Room in version 2.7.0-alpha12"
 tags: ["database"]
 categories: ["KMP"]
 series: ["Hugo Guide"]
