@@ -19,6 +19,10 @@ FROM nginx:alpine
 # Copy the generated static files from the Hugo build to nginx's serving directory
 COPY --from=0 /src/public /usr/share/nginx/html
 
+# Add permissions for nginx user
+RUN chown -R nginx:nginx /usr/share/nginx/html && \
+    chmod -R 755 /usr/share/nginx/html
+
 # Copy the custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
