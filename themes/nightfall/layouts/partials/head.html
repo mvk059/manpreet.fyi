@@ -24,4 +24,7 @@
 {{ $style := resources.Get "sass/main.scss" | toCSS $options | minify | fingerprint }}
 <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
+<!-- Umami Analytics -->
+<script defer src="https://umami.manpreet.fyi/script.js" data-website-id="23523de6-5abf-4d4a-84b1-75c4c62b94c0"></script>
+
 {{ partial "custom-head.html" . }}
