@@ -11,7 +11,7 @@ theme = 'nightfall'
   [[menu.header]]
     name = "posts"
     weight = 0
-    url = "posts"
+    url = "/posts/"
 
 [params]
   user = ""
