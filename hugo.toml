@@ -8,17 +8,17 @@ theme = 'nightfall'
     name = "portfolio"
     weight = 1
     url = "https://portfolio.manpreet.fyi/"
-#  [[menu.header]]
-#    name = "blog"
-#    weight = 0
-#    url = "blog"
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "posts"
 
 [params]
   user = ""
   hostname = "manpreet.fyi"
 [params.author]
-  name = "Manpreet Kunnath"  # Website and RSS feed author
-  email = "m@manpreet.fyi"  # RSS feed email address
+  name = "Manpreet Kunnath"
+  email = "m@manpreet.fyi"
 
 [[params.social]]
   key = 0
