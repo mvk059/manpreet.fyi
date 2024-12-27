@@ -46,3 +46,8 @@ theme = 'nightfall'
 	name = "email"
 	url = "mailto:m@manpreet.fyi"
 	aria = "My e-Mail Address"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
