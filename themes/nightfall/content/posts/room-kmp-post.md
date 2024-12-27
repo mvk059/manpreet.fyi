@@ -29,7 +29,7 @@ Add the dependencies of Room & KSP in your `libs.versions.toml` file
 ```toml
 [versions]
 compose-multiplatform = "1.7.1" 
-kotlin = "2.1.0"                # For refernce
+kotlin = "2.1.0"                # For reference
 
 room = "2.7.0-alpha12"
 ksp = "2.1.0-1.0.29"
