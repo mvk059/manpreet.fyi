@@ -6,7 +6,7 @@ description: "Setting up Room in version 2.7.0-alpha12"
 summary: "Setting up Room in version 2.7.0-alpha12"
 tags: ["database"]
 categories: ["KMP"]
-series: ["Hugo Guide"]
+series: ["KMP"]
 author: "Manpreet Kunnath"
 showAuthor: true
 showDate: true
