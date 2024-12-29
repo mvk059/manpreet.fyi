@@ -18,7 +18,7 @@ Here is how you can capture any composable into an ImageBitmap.
 
 ## Demo
 <video width="100%" controls>
-  <source src="https://github.com/mvk059/manpreet.fyi/raw/refs/heads/main/themes/nightfall/static/videos/capture-composable.webm">
+  <source src="/capture-composable.mp4">
 </video>
 
 To start of, the compose multiplatform version needs to be at least `1.7.0-alpha07+`
