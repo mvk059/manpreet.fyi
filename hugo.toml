@@ -10,7 +10,7 @@ path = 'github.com/LordMathis/hugo-theme-nightfall'
 [[menu.header]]
 name = "portfolio"
 weight = 1
-url = "https://portfolio.manpreet.fyi/"
+url = "https://manpreet.fyi/portfolio"
 [[menu.header]]
 name = "posts"
 weight = 0
