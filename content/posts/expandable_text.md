@@ -5,8 +5,8 @@ draft: false
 description: "Creating a Show More/Show Less text component in Jetpack Compose"
 summary: "Creating a Show More/Show Less text component in Jetpack Compose"
 tags: [ "UI" ]
-categories: [ "KMP" ]
-series: [ "KMP" ]
+categories: [ "CMP" ]
+series: [ "CMP" ]
 author: "Manpreet Kunnath"
 showAuthor: true
 showDate: true

@@ -4,7 +4,7 @@ date: 2024-12-23
 draft: false
 description: "Setting up Room in version 2.7.0-alpha12"
 summary: "Setting up Room in version 2.7.0-alpha12"
-tags: ["database"]
+tags: ["database", "setup"]
 categories: ["KMP"]
 series: ["KMP"]
 author: "Manpreet Kunnath"

@@ -4,9 +4,9 @@ date: 2024-12-27
 draft: false
 description: "An easy way to capture any composable into an ImageBitmap"
 summary: "An easy way to capture any composable into an ImageBitmap"
-tags: ["graphics"]
-categories: ["KMP"]
-series: ["KMP"]
+tags: ["graphics", "UI"]
+categories: ["CMP"]
+series: ["CMP"]
 author: "Manpreet Kunnath"
 showAuthor: true
 showDate: true

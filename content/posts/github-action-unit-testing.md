@@ -4,7 +4,7 @@ date: 2024-12-30
 draft: false
 description: "Setup unit tests in Github Actions"
 summary: "Setup unit tests in Github Actions"
-tags: ["github-actions"]
+tags: ["github-actions", "setup"]
 categories: ["CI/CD"]
 series: ["KMP"]
 author: "Manpreet Kunnath"
