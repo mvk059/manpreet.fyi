@@ -18,3 +18,4 @@ So I tried to recreate it. But instead of a pug, it would be my dogs.
 
 [Here is my rendition of it](https://manpreet.fyi/dogs). 
 
+{{< figure src="/post-dogs/dogs.jpg" alt="Dogs" class="center" height="500">}}
