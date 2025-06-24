@@ -2,7 +2,6 @@
 title: "Dogs"
 date: 2025-06-24
 draft: false
-#description: "In praise of my dogs"
 summary: "In praise of my dogs"
 tags: [ "UI" ]
 categories: [ "Web" ]
