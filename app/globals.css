@@ -170,4 +170,133 @@ root {
   .theme-icon {
     @apply dark:invert;
   }
+
+	.about-main {
+		@apply flex min-h-screen flex-col items-center p-8 md:p-16 lg:p-24 mt-8;
+	}
+
+	.about-container {
+		@apply grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-4;
+	}
+
+	.about-left-column {
+		@apply md:col-span-1;
+	}
+
+	.about-left-column-sticky {
+		@apply sticky top-24;
+	}
+
+	.about-profile-image-wrapper {
+		@apply w-48 h-48 rounded-full mx-auto overflow-hidden mb-4;
+	}
+
+	.about-profile-image {
+		@apply object-cover;
+	}
+
+	.about-contact-info {
+		@apply text-center;
+	}
+
+	.about-contact-item {
+		@apply flex items-center justify-center gap-2 mt-2;
+	}
+
+	.about-right-column {
+		@apply md:col-span-3;
+	}
+
+	.about-section {
+		@apply mb-8;
+	}
+
+	.about-name {
+		@apply text-4xl font-bold;
+	}
+
+	.about-subtitle {
+		@apply text-xl text-gray-600 dark:text-gray-400;
+	}
+
+	.about-social-links {
+		@apply flex gap-4 mt-4;
+	}
+
+	.about-social-link {
+		@apply text-gray-500 hover:text-gray-700 dark:hover:text-gray-300;
+	}
+
+	.about-description {
+		@apply mt-4 text-gray-700 dark:text-gray-300;
+	}
+
+	.about-section-title {
+		@apply text-2xl font-bold mb-4;
+	}
+
+	.about-experience-item {
+		@apply mb-6;
+	}
+
+	.about-experience-header {
+		@apply flex justify-between;
+	}
+
+	.about-experience-company {
+		@apply text-xl font-semibold;
+	}
+
+	.about-experience-date {
+		@apply text-gray-500 dark:text-gray-400;
+	}
+
+	.about-experience-title {
+		@apply text-lg text-gray-600 dark:text-gray-400;
+	}
+
+	.about-experience-duties {
+		@apply list-disc list-inside mt-2 text-gray-700 dark:text-gray-300;
+	}
+
+	.about-education-item {
+		@apply flex justify-between;
+	}
+
+	.about-education-details {
+		@apply text-xl font-semibold;
+	}
+
+	.about-education-major {
+		@apply text-lg text-gray-600 dark:text-gray-400;
+	}
+
+	.about-education-date {
+		@apply text-gray-500 dark:text-gray-400;
+	}
+
+	.about-projects-container {
+		@apply grid grid-cols-1 md:grid-cols-2 gap-6;
+	}
+
+	.about-project-card {
+		@apply border rounded-lg p-4;
+	}
+
+	.about-project-image-placeholder {
+		@apply w-full h-40 bg-gray-200 dark:bg-gray-700 rounded-md mb-4;
+	}
+
+	.about-project-title {
+		@apply text-xl font-semibold;
+	}
+
+	.about-project-description {
+		@apply text-gray-600 dark:text-gray-400;
+	}
+
+	.about-project-link {
+		@apply text-blue-500 hover:underline mt-2 inline-block;
+	}
+
 }
