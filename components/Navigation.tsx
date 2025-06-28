@@ -24,14 +24,16 @@ const Navigation = () => {
 			<Link href="/" className="nav-button">
 				<Image src="/home.svg" alt="Home" width={20} height={20} className="theme-icon"/>
 			</Link>
-			<div className="divider"></div>
+			<div className="divider ms-3 "></div>
 			<div className="nav-links">
-				<NavLink href="/about" imgSrc="/user.svg" alt="About">About</NavLink>
-				<NavLink href="/work" imgSrc="/work.svg" alt="Work">Work</NavLink>
-				<NavLink href="/blog" imgSrc="/blog.svg" alt="Blog">Blog</NavLink>
+				<NavLink href="/about" imgSrc="user.svg" alt="About">About</NavLink>
+				<NavLink href="/work" imgSrc="work.svg" alt="Work">Work</NavLink>
+				<NavLink href="/blog" imgSrc="blog.svg" alt="Blog">Blog</NavLink>
 			</div>
-			<div className="divider"></div>
-			<ThemeSwitch className="nav-button"/>
+			<div className="divider me-3"></div>
+			<div className="nav-button">
+				<ThemeSwitch />
+			</div>
 		</nav>
 	);
 };

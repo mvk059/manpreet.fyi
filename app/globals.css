@@ -136,31 +136,31 @@ root {
 
 @layer components {
   .header {
-    @apply fixed top-8 left-1/2 -translate-x-1/2 z-50;
+    @apply fixed bottom-8 md:top-8 left-1/2 -translate-x-1/2 z-50 w-3/4 md:w-auto;
   }
 
   .navigation-container {
-    @apply flex items-center gap-4 bg-white/60 dark:bg-gray-800/60 shadow-lg rounded-full px-4 py-2 backdrop-blur-sm;
+    @apply flex items-center justify-between bg-white/60 dark:bg-gray-800/60 shadow-lg rounded-full px-2 py-1.5 backdrop-blur-sm w-full md:w-auto;
   }
 
   .divider {
-    @apply w-px h-6 bg-gray-300 dark:bg-gray-600;
+    @apply w-px h-6 md:mx-2 bg-gray-300 dark:bg-gray-600;
   }
 
   .nav-links {
-    @apply flex items-center gap-4;
+    @apply flex items-center justify-evenly flex-1;
   }
 
   .nav-link {
-    @apply flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors;
+    @apply flex items-center justify-center gap-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors px-4 py-2;
   }
 
   .nav-text {
-    @apply text-sm font-medium;
+    @apply text-sm font-medium hidden md:inline;
   }
 
   .nav-button {
-    @apply p-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors;
+    @apply px-2 py-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors shrink-0;
   }
 
   .theme-icon {

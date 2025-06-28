@@ -1,15 +1,15 @@
 'use client'
 
-import { FiSun, FiMoon } from "react-icons/fi"
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
+import {FiMoon, FiSun} from "react-icons/fi"
+import {useEffect, useState} from 'react'
+import {useTheme} from 'next-themes'
 import Image from "next/image"
 
-const ThemeSwitch = ({className}: {className: string}) => {
+const ThemeSwitch = () => {
 	const [mounted, setMounted] = useState(false)
-	const { setTheme, resolvedTheme } = useTheme()
+	const {setTheme, resolvedTheme} = useTheme()
 
-	useEffect(() =>  setMounted(true), [])
+	useEffect(() => setMounted(true), [])
 
 	if (!mounted) return (
 		<Image
@@ -20,16 +20,16 @@ const ThemeSwitch = ({className}: {className: string}) => {
 			alt="Loading Light/Dark Toggle"
 			priority={false}
 			title="Loading Light/Dark Toggle"
-			className={className}
 		/>
 	)
 
 	if (resolvedTheme === 'dark') {
-		return <FiSun onClick={() => setTheme('light')} />
+		return <FiSun className="mx-2" onClick={() => setTheme('light')}/>
 	}
 
 	if (resolvedTheme === 'light') {
-		return <FiMoon onClick={() => setTheme('dark')} />
+		return <FiMoon className="theme-icon" onClick={() => setTheme('dark')}/>
 	}
 }
+
 export default ThemeSwitch
