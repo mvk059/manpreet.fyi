@@ -1,8 +1,10 @@
 import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
-import {Providers} from "@/app/providers";
 import Navigation from "@/components/Navigation";
+import {ThemeClientProvider} from "@/providers/ThemeClientProvider";
+import {ConvexClientProvider} from "@/providers/ConvexClientProvider";
+import {ReactNode} from "react";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -19,16 +21,18 @@ export const metadata: Metadata = {
 	description: "Portfolio of Manpreet Kunnath",
 };
 
-export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({children}: Readonly<{ children: ReactNode }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
 		<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-		<Providers>
-			<div className="header">
-				<Navigation/>
-			</div>
-			{children}
-		</Providers>
+		<ThemeClientProvider>
+			<ConvexClientProvider>
+				<div className="header">
+					<Navigation/>
+				</div>
+				{children}
+			</ConvexClientProvider>
+		</ThemeClientProvider>
 		</body>
 		</html>
 	);
