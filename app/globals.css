@@ -155,12 +155,16 @@ root {
     @apply flex items-center justify-center gap-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors px-4 py-2;
   }
 
+  .nav-link.selected {
+    @apply bg-gray-200/70 dark:bg-gray-700/70;
+  }
+
   .nav-text {
     @apply text-sm font-medium hidden md:inline;
   }
 
   .nav-button {
-    @apply px-2 py-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors shrink-0;
+    @apply px-3 py-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors shrink-0;
   }
 
   .theme-icon {
