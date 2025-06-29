@@ -136,7 +136,7 @@ root {
 
 @layer components {
   .header {
-    @apply fixed bottom-8 md:top-8 left-1/2 -translate-x-1/2 z-50 w-3/4 md:w-auto;
+    @apply fixed bottom-8 md:top-8 left-1/2 -translate-x-1/2 z-50 w-3/4 md:w-auto h-fit;
   }
 
   .navigation-container {
@@ -299,4 +299,18 @@ root {
 		@apply text-blue-500 hover:underline mt-2 inline-block;
 	}
 
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer-effect-animation {
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.6) 20%, transparent 40%);
 }
