@@ -28,7 +28,8 @@ export default function About() {
                   alt="User"
                   width={192}
                   height={192}
-                  className="about-profile-image"
+                  objectFit="cover"
+                  className="theme-icon"
                 />
               </div>
             )}
@@ -67,6 +68,7 @@ export default function About() {
                       alt={social.platform}
                       width={24}
                       height={24}
+                      className="theme-icon"
                     />
                   )}
                 </a>
@@ -125,7 +127,7 @@ export default function About() {
                       <Image
                         src={project.image}
                         alt={project.title}
-                        layout="fill"
+                        fill={true}
                         objectFit="cover"
                       />
                     </div>
