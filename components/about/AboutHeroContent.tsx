@@ -35,6 +35,7 @@ export default function AboutHeroContent() {
             <Link
               key={social.platform}
               href={social.url}
+              target="_blank"
               className="about-social-link"
             >
               <Image

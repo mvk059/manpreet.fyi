@@ -46,7 +46,7 @@ export default function AboutProjectsSection() {
 						<p className="about-project-description">
 							{project.description}
 						</p>
-						<a href={project.url} className="about-project-link">
+						<a href={project.url} target="_blank" className="about-project-link">
 							View Project
 						</a>
 					</div>
