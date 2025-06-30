@@ -302,12 +302,20 @@ root {
 		@apply text-blue-500 hover:underline mt-2 inline-block;
 	}
 
-	.blog-main {
+	.blog-list-main {
 		@apply flex min-h-screen flex-col items-center p-8 md:p-16 lg:p-24 mt-8;
 	}
 
-	.blog-section {
-		@apply w-full max-w-6xl;
+	.blog-list-section {
+		@apply w-full max-w-5xl mx-auto;
+	}
+
+	.blog-post-main {
+		@apply flex min-h-screen flex-col items-center p-8;
+	}
+
+	.blog-post-section {
+		@apply w-full max-w-4xl mx-auto pt-24 md:pt-32;
 	}
 
 	.blog-title {
@@ -328,6 +336,11 @@ root {
 
 	.blog-list-date {
 		@apply text-sm text-gray-500;
+	}
+
+	.blog-post-article {
+		@apply prose-lg prose-p:leading-normal prose-a:underline prose-a:underline-offset-2 prose-a:decoration-gray-400 prose-a:decoration-1 hover:prose-a:decoration-gray-800 dark:prose-a:decoration-gray-600 dark:hover:prose-a:decoration-gray-200 max-w-none;
+		@apply prose-pre:bg-gray-100 dark:prose-pre:bg-gray-800 prose-pre:text-gray-900 dark:prose-pre:text-gray-50;
 	}
 
 }

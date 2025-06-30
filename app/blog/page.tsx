@@ -8,8 +8,8 @@ export default async function BlogPage() {
 	const allPosts = await convex.query(api.posts.getAllPublished);
 
 	return (
-		<main className="blog-main">
-			<section className="blog-section">
+		<main className="blog-list-main">
+			<section className="blog-list-section">
 				<h1 className="blog-title">Blog Posts</h1>
 				<BlogList posts={allPosts}/>
 			</section>

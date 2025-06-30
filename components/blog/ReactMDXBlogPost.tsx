@@ -10,7 +10,7 @@ export default async function ReactMDXBlogPost({slug}: { slug: string }) {
 		const fileContents = await fs.readFile(filePath, 'utf8');
 		const {content, data} = matter(fileContents);
 		return (
-			<article className="prose dark:prose-invert">
+			<article className="blog-post-article">
 				<h1>{data.title}</h1>
 				<MDXRemote source={content} components={components}/>
 			</article>

@@ -12,7 +12,7 @@ export default async function RegularBlogPost({slug}: { slug: string }) {
 	}
 
 	return (
-		<article className="prose dark:prose-invert">
+		<article className="blog-post-article">
 			<MDXRemote source={post.body ?? ""}/>
 		</article>
 	);

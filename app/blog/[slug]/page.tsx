@@ -14,8 +14,8 @@ export default async function BlogPostPage({params}: { params: Promise<{ slug: s
 	}
 
 	return (
-		<main className="blog-main">
-			<section className="blog-section">
+		<main className="blog-post-main">
+			<section className="blog-post-section">
 				{post.source === 'mdx' ? (
 					<ReactMDXBlogPost slug={slug}/>
 				) : (
