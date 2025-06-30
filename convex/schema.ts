@@ -46,14 +46,5 @@ export default defineSchema({
 		order: v.number(),
 	}),
 
-	posts: defineTable({
-		title: v.string(),
-		slug: v.string(),
-		author: v.string(),
-		publishedAt: v.number(),
-		isPublished: v.boolean(),
-		summary: v.string(),
-		body: v.optional(v.string()),
-		source: v.union(v.literal("database"), v.literal("mdx")),
-	}).index("by_slug", ["slug"]),
+
 });
