@@ -1,10 +1,11 @@
 import BlogPost from "@/components/blog/BlogPost";
 
-export default async function BlogPostPage({params}: { params: { slug: string } }) {
+export default async function BlogPostPage({params}: { params: Promise<{ slug: string }> }) {
+	const {slug} = await params;
 	return (
 		<main className="blog-main">
 			<section className="blog-section">
-				<BlogPost slug={params.slug}/>
+				<BlogPost slug={slug}/>
 			</section>
 		</main>
 	);
