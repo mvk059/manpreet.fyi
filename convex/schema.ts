@@ -50,7 +50,7 @@ export default defineSchema({
 		title: v.string(),
 		slug: v.string(),
 		author: v.string(),
-		publishedAt: v.optional(v.number()),
+		publishedAt: v.number(),
 		isPublished: v.boolean(),
 		summary: v.string(),
 		body: v.optional(v.string()),
