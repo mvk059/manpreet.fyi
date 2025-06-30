@@ -2,6 +2,8 @@ import BlogList from "@/components/blog/BlogList";
 import {ConvexHttpClient} from "convex/browser";
 import {api} from "@/convex/_generated/api";
 
+export const revalidate = 60; // Revalidate this page every 60 seconds
+
 const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!)
 
 export default async function BlogPage() {

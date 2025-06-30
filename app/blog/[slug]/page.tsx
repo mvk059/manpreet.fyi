@@ -3,6 +3,8 @@ import {api} from "@/convex/_generated/api";
 import ReactMDXBlogPost from "@/components/blog/ReactMDXBlogPost";
 import RegularBlogPost from "@/components/blog/RegularBlogPost";
 
+export const revalidate = 60; // Revalidate this page every 60 seconds
+
 const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 
 export default async function BlogPostPage({params}: { params: Promise<{ slug: string }> }) {
