@@ -1,15 +1,23 @@
 import type {NextConfig} from "next";
+import createMDX from '@next/mdx'
 
 const nextConfig: NextConfig = {
-  images: {
+	images: {
 		remotePatterns: [
 			{
 				protocol: "https",
 				hostname: "**.convex.cloud",
 			}
 		],
-	  dangerouslyAllowSVG: true,
-  }
+		dangerouslyAllowSVG: true,
+	},
+	pageExtensions: ['md', 'mdx', 'ts', 'tsx'],
+	experimental: {
+		mdxRs: true,
+	},
+	transpilePackages: ['next-mdx-remote'],
 };
 
-export default nextConfig;
+const withMDX = createMDX({})
+
+export default withMDX(nextConfig);

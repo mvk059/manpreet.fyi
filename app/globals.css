@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@plugin "@tailwindcss/typography";
+
 @custom-variant dark (&:is(.dark *));
 
 root {
@@ -122,54 +124,55 @@ root {
 	* {
 		@apply border-border outline-ring/50;
 	}
-			body {
+
+	body {
 		@apply bg-background text-foreground;
 		transition: background-color 0.3s ease, color 0.3s ease;
 	}
 }
 
 @layer base {
-  body {
-    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50 min-h-screen;
-  }
+	body {
+		@apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50 min-h-screen;
+	}
 }
 
 @layer components {
-  .header {
-    @apply fixed bottom-8 md:top-8 left-1/2 -translate-x-1/2 z-50 w-3/4 md:w-auto h-fit;
-  }
+	.header {
+		@apply fixed bottom-8 md:top-8 left-1/2 -translate-x-1/2 z-50 w-3/4 md:w-auto h-fit;
+	}
 
-  .navigation-container {
-    @apply flex items-center justify-between bg-white/60 dark:bg-gray-800/60 shadow-lg rounded-full px-2 py-1.5 backdrop-blur-sm w-full md:w-auto;
-  }
+	.navigation-container {
+		@apply flex items-center justify-between bg-white/60 dark:bg-gray-800/60 shadow-lg rounded-full px-2 py-1.5 backdrop-blur-sm w-full md:w-auto;
+	}
 
-  .divider {
-    @apply w-px h-6 md:mx-2 bg-gray-300 dark:bg-gray-600;
-  }
+	.divider {
+		@apply w-px h-6 md:mx-2 bg-gray-300 dark:bg-gray-600;
+	}
 
-  .nav-links {
-    @apply flex items-center justify-evenly flex-1;
-  }
+	.nav-links {
+		@apply flex items-center justify-evenly flex-1;
+	}
 
-  .nav-link {
-    @apply flex items-center justify-center gap-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors px-4 py-2;
-  }
+	.nav-link {
+		@apply flex items-center justify-center gap-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors px-4 py-2;
+	}
 
-  .nav-link.selected {
-    @apply bg-gray-200/70 dark:bg-gray-700/70;
-  }
+	.nav-link.selected {
+		@apply bg-gray-200/70 dark:bg-gray-700/70;
+	}
 
-  .nav-text {
-    @apply text-sm font-medium hidden md:inline;
-  }
+	.nav-text {
+		@apply text-sm font-medium hidden md:inline;
+	}
 
-  .nav-button {
-    @apply px-3 py-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors shrink-0;
-  }
+	.nav-button {
+		@apply px-3 py-2 rounded-full hover:bg-gray-200/70 dark:hover:bg-gray-700/70 transition-colors shrink-0;
+	}
 
-  .theme-icon {
-    @apply dark:invert;
-  }
+	.theme-icon {
+		@apply dark:invert;
+	}
 
 	.about-main {
 		@apply flex min-h-screen flex-col items-center p-8 md:p-16 lg:p-24 mt-8;
@@ -299,18 +302,46 @@ root {
 		@apply text-blue-500 hover:underline mt-2 inline-block;
 	}
 
+	.blog-main {
+		@apply flex min-h-screen flex-col items-center p-8 md:p-16 lg:p-24 mt-8;
+	}
+
+	.blog-section {
+		@apply w-full max-w-6xl;
+	}
+
+	.blog-title {
+		@apply text-4xl font-bold mb-8;
+	}
+
+	.blog-list-container {
+		@apply space-y-4;
+	}
+
+	.blog-list-item {
+		@apply flex justify-between items-center;
+	}
+
+	.blog-list-title {
+		@apply text-lg font-semibold hover:underline;
+	}
+
+	.blog-list-date {
+		@apply text-sm text-gray-500;
+	}
+
 }
 
 @keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
 }
 
 .shimmer-effect-animation {
-  animation: shimmer 1.5s infinite;
-  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.6) 20%, transparent 40%);
+	animation: shimmer 1.5s infinite;
+	background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.6) 20%, transparent 40%);
 }

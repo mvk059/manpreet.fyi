@@ -45,4 +45,14 @@ export default defineSchema({
 		url: v.string(),
 		order: v.number(),
 	}),
+
+	posts: defineTable({
+		title: v.string(),
+		slug: v.string(),
+		author: v.string(),
+		publishedAt: v.optional(v.number()),
+		isPublished: v.boolean(),
+		summary: v.string(),
+		body: v.string(), // This will store the full MDX content
+	}).index("by_slug", ["slug"]),
 });

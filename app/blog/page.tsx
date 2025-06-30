@@ -1,7 +1,18 @@
-export default function Blog() {
-  return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-      <h1>Blog Page</h1>
-    </main>
-  );
+import BlogList from "@/components/blog/BlogList";
+import {ConvexHttpClient} from "convex/browser";
+import {api} from "@/convex/_generated/api";
+
+const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
+
+export default async function BlogPage() {
+	const posts = await convex.query(api.posts.getAllPublished);
+
+	return (
+		<main className="blog-main">
+			<section className="blog-section">
+				<h1 className="blog-title">Blog Posts</h1>
+				<BlogList posts={posts}/>
+			</section>
+		</main>
+	);
 }
