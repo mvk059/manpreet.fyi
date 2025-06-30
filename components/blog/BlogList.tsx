@@ -3,6 +3,7 @@ import {format} from "date-fns";
 import {Doc} from "@/convex/_generated/dataModel";
 
 export default function BlogList({posts}: { posts: Doc<"posts">[] }) {
+	console.log("BlogList received posts:", posts);
 	if (!posts || posts.length === 0) {
 		return <div>No posts found.</div>;
 	}
