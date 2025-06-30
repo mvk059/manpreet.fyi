@@ -4,7 +4,7 @@ import {MDXRemote} from "next-mdx-remote/rsc";
 
 const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 
-export default async function BlogPost({slug}: { slug: string }) {
+export default async function RegularBlogPost({slug}: { slug: string }) {
 	const post = await convex.query(api.posts.getBySlug, {slug});
 
 	if (!post) {
@@ -13,7 +13,7 @@ export default async function BlogPost({slug}: { slug: string }) {
 
 	return (
 		<article className="prose dark:prose-invert">
-			<MDXRemote source={post.body}/>
+			<MDXRemote source={post.body ?? ""}/>
 		</article>
 	);
 }

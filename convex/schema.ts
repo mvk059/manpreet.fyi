@@ -53,6 +53,7 @@ export default defineSchema({
 		publishedAt: v.optional(v.number()),
 		isPublished: v.boolean(),
 		summary: v.string(),
-		body: v.string(), // This will store the full MDX content
+		body: v.optional(v.string()),
+		source: v.union(v.literal("database"), v.literal("mdx")),
 	}).index("by_slug", ["slug"]),
 });
