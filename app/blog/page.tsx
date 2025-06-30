@@ -6,6 +6,7 @@ const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!)
 
 export default async function BlogPage() {
 	const allPosts = await convex.query(api.posts.getAllPublished);
+	console.log(`All posts: ${allPosts}`);
 
 	return (
 		<main className="blog-list-main">
