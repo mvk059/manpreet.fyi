@@ -8,9 +8,14 @@
  * @module
  */
 
-import type {ApiFromModules, FilterApi, FunctionReference,} from "convex/server";
+import type {
+  ApiFromModules,
+  FilterApi,
+  FunctionReference,
+} from "convex/server";
 import type * as about from "../about.js";
 import type * as education from "../education.js";
+import type * as posts from "../posts.js";
 import type * as projects from "../projects.js";
 import type * as workExperience from "../workExperience.js";
 
@@ -25,6 +30,7 @@ import type * as workExperience from "../workExperience.js";
 declare const fullApi: ApiFromModules<{
   about: typeof about;
   education: typeof education;
+  posts: typeof posts;
   projects: typeof projects;
   workExperience: typeof workExperience;
 }>;
