@@ -1,15 +1,13 @@
-import {ConvexHttpClient} from "convex/browser";
 import {api} from "@/convex/_generated/api";
 import ReactMDXBlogPost from "@/components/blog/ReactMDXBlogPost";
 import RegularBlogPost from "@/components/blog/RegularBlogPost";
+import {fetchQuery} from "convex/nextjs";
 
-export const revalidate = 60; // Revalidate this page every 60 seconds
-
-const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
+export const revalidate = 60;
 
 export default async function BlogPostPage({params}: { params: Promise<{ slug: string }> }) {
 	const {slug} = await params;
-	const post = await convex.query(api.posts.getBySlug, {slug});
+	const post = await fetchQuery(api.posts.getBySlug, {slug});
 
 	if (!post) {
 		return <div>Post not found.</div>;

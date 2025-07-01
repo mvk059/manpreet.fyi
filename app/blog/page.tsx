@@ -1,13 +1,11 @@
 import BlogList from "@/components/blog/BlogList";
-import {ConvexHttpClient} from "convex/browser";
 import {api} from "@/convex/_generated/api";
+import {fetchQuery} from "convex/nextjs";
 
-export const revalidate = 60; // Revalidate this page every 60 seconds
-
-const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!)
+export const revalidate = 60;
 
 export default async function BlogPage() {
-	const allPosts = await convex.query(api.posts.getAllPublished);
+	const allPosts = await fetchQuery(api.posts.getAllPublished);
 	console.log(`All posts: ${allPosts}`);
 
 	return (
